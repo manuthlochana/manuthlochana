@@ -1,108 +1,51 @@
-# Hi there, I'm Manuth Lochana! 👋
+<p align="center">
+  <a href="https://www.itsmanuth.dev">
+    <img src="./assets/hero.svg" alt="MANUTH. — I build the systems that speak before you do. | Thunder Storm Studio" width="100%" />
+  </a>
+</p>
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=435&lines=Machine+Learning+Engineer;Data+Scientist;Full+Stack+Developer;AI+%26+Tech+Enthusiast" alt="Typing SVG" />
-</div>
+### `01 / MANIFESTO`
 
-## 🌍 Based in Sri Lanka | 🎯 Passionate about building innovative solutions
+> **Stripping away fragile wrappers and superficial abstractions. Architecting autonomous systems, self-healing agent swarms, and high-concurrency foundations built for real-world load.**
 
-Welcome to my GitHub profile! I'm a passionate software developer with a love for creating seamless, user-friendly applications. I enjoy working on both frontend and backend technologies, and I'm always eager to learn and explore new tools and frameworks.
+Every system begins at its failure boundary — memory isolation, concurrency backpressure, and deterministic state verification. Across **Thunder Storm Studio**, I design and ship end-to-end production architecture: **autonomous AI workflows** that recover when downstream services degrade, **full-stack applications** built for sustained throughput, **zero-trust infrastructure**, and **silent automation daemons** that hold up under real load.
 
 ---
 
-## 🚀 Technologies & Tools
+### `02 / SELECTED WORK`
 
-### 💻 Languages
-<p align="left">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-</p>
+| Project | Architecture | Core Stack | Link |
+| :--- | :--- | :--- | :--- |
+| **`Tutes-Delivery-Tracking-System`** | Production parcel-tracking engine with an in-memory SL Post CAPTCHA solver, bulk dispatch ingestion, and full Sinhala localization. | `Next.js 16` · `TypeScript` · `Supabase` · `PostgreSQL` | [Repo ↗](https://github.com/manuthlochana/Tutes-Delivery-Tracking-System) · [Live ↗](https://mediatutes.vercel.app) |
+| **`Item-scraper` (Smart Sentry)** | Autonomous self-healing scraping DAG that classifies page states in real time, evades bot traps and cyclic loops, and emits strictly validated schemas. | `Python` · `Crawl4AI` · `Gemini Flash` · `Pydantic` · `Redis` | [Repo ↗](https://github.com/manuthlochana/Item-scraper) |
+| **`Subtitle-Translator`** | English-to-Sinhala SRT localization engine pairing native colloquial screenwriter prompting with a 3-Layer Unicode Defense System. | `TypeScript` · `React 19` · `Vite` · `Gemini` · `Node.js` | [Repo ↗](https://github.com/manuthlochana/Subtitle-Translator) |
+| **`num2vcf`** | Zero-server, client-side batch sanitizer and deduplicator converting bulk raw numbers into RFC-compliant vCard 3.0 bundles. | `TypeScript` · `React 19` · `Vite` · `Tailwind CSS` | [Repo ↗](https://github.com/manuthlochana/num2vcf) · [Live ↗](https://num2vcf.vercel.app) |
+| **`ORL-Free-Vps-`** | Autonomous OCI capacity-acquisition daemon featuring dual-shape targeting (`A1.Flex` / `E2.1.Micro`) and anti-detection randomized jitter. | `Python` · `OCI SDK` · `Paramiko` · `Linux` | [Repo ↗](https://github.com/manuthlochana/ORL-Free-Vps-) |
 
-### 🎨 Frontend Development
-<p align="left">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-</p>
+---
 
-### ⚙️ Backend & Database
-<p align="left">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
-  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" />
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-</p>
+### `03 / ARSENAL`
 
-### 🤖 AI & Data Science
-<p align="left">
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-</p>
-
-### 🛠️ Tools & Platforms
-<p align="left">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
+<p align="center">
+  <img src="./assets/arsenal.svg" alt="03 / ARSENAL — Systems & AI, Full-Stack, Infra & Security, Design & Motion" width="100%" />
 </p>
 
 ---
 
-## 📊 GitHub Stats
+### `04 / INITIATE DIALOGUE`
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=manuthlochana&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=manuthlochana&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="180" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=manuthlochana&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</div>
-
----
-
-## 🌟 Let's Connect!
-
-I'm always open to collaborating on interesting projects or discussing new ideas. Feel free to reach out to me!
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/manuth-lochana-8940a4347/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://x.com/manuthlochana" target="_blank">
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-  </a>
-  <a href="https://www.reddit.com/user/manuthlochana/" target="_blank">
-    <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit" />
-  </a>
-  <a href="mailto:manuthlochana01@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
-  <a href="https://www.manuthlochana.site" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
+<p align="center">
+  <a href="https://www.itsmanuth.dev">
+    <img src="./assets/footer.svg" alt="04 / INITIATE DIALOGUE — Got an ambitious system to build?" width="100%" />
   </a>
 </p>
 
----
-
-## 🎯 Fun Fact
-
-I once wrote a script that automated my morning coffee routine! ☕️😄
-
----
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=manuthlochana&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views" />
-</div>
-
-<div align="center">
-  <i>⭐️ From <a href="https://github.com/manuthlochana">manuthlochana</a></i>
-</div>
+<p align="center">
+  <code><a href="https://www.itsmanuth.dev">PORTFOLIO ↗</a></code>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <code><a href="mailto:manuth.dev@gmail.com">MANUTH.DEV@GMAIL.COM ↗</a></code>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <code><a href="https://www.linkedin.com/in/manuth-lochana/">LINKEDIN ↗</a></code>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <code><a href="https://x.com/manuthlochana">X / @MANUTHLOCHANA ↗</a></code>
+</p>
