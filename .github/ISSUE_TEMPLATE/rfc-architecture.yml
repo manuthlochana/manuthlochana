@@ -1,0 +1,43 @@
+name: "[RFC] Architectural Proposal"
+description: "Propose a structural change, visual asset upgrade, or automation pipeline."
+title: "[RFC]: "
+labels: ["rfc", "architecture"]
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: "01 / System Scope"
+      options:
+        - "Hero & Editorial Visual System"
+        - "Selected Work Ledger"
+        - "Arsenal Matrix"
+        - "CI / Automation Pipeline"
+        - "Repository Governance"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "02 / Problem Statement & Failure Boundary"
+      description: "What structural gap, visual drift, or manual bottleneck does this address?"
+      placeholder: "State the concrete constraint or architectural defect..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "03 / Proposed Architecture"
+      description: "Specify the deterministic solution, palette/typography invariants, and asset targets."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "04 / Acceptance Criteria"
+      description: "Verifiable checks required before merge."
+      value: |
+        - [ ] Matches Obsidian Brutalist-Editorial design tokens (`#0A0A0A`, `#FFFFFF`, `#FF3B1D`)
+        - [ ] Zero third-party stat cards, typing SVGs, or rainbow shields
+        - [ ] Passes `validate-profile` GitHub Actions checks
+    validations:
+      required: true

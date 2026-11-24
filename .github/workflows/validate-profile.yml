@@ -1,0 +1,84 @@
+name: Validate Profile Architecture
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: SVG & Editorial Integrity Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate SVG assets and README invariants
+        run: |
+          python3 - << 'EOF'
+          import os
+          import re
+          import sys
+          import xml.etree.ElementTree as ET
+
+          errors = []
+
+          # 1. Validate README invariants if assets/ exists
+          with open("README.md", "r", encoding="utf-8") as f:
+              readme = f.read()
+
+          # Enforce editorial rebuild invariants once custom assets/ are introduced
+          if os.path.isdir("assets"):
+              banned_patterns = [
+                  "readme-typing-svg",
+                  "github-readme-stats",
+                  "github-readme-streak-stats",
+                  "img.shields.io",
+                  "komarev.com",
+              ]
+              for pattern in banned_patterns:
+                  if pattern in readme:
+                      errors.append(f"README contains banned boilerplate tracker: {pattern}")
+
+              required_sections = [
+                  "01 / MANIFESTO",
+                  "02 / SELECTED WORK",
+                  "03 / ARSENAL",
+                  "04 / INITIATE DIALOGUE",
+              ]
+              for section in required_sections:
+                  if section not in readme:
+                      errors.append(f"README missing required section: {section}")
+
+              # Verify referenced local SVG assets exist on disk
+              for match in re.findall(r'(?:\./)?(assets/[a-zA-Z0-9._-]+\.svg)', readme):
+                  if not os.path.isfile(match):
+                      errors.append(f"README references missing SVG asset: {match}")
+
+              svg_files = sorted(f for f in os.listdir("assets") if f.endswith(".svg"))
+              if not svg_files:
+                  errors.append("assets/ directory exists but contains no .svg files")
+              for fname in svg_files:
+                  fpath = os.path.join("assets", fname)
+                  with open(fpath, "r", encoding="utf-8") as sf:
+                      raw = sf.read()
+                  if "NaN" in raw or "undefined" in raw:
+                      errors.append(f"{fpath} contains invalid numeric/path token (NaN/undefined)")
+                  try:
+                      root = ET.fromstring(raw)
+                      if not root.attrib.get("viewBox"):
+                          errors.append(f"{fpath} is missing explicit viewBox attribute")
+                  except ET.ParseError as exc:
+                      errors.append(f"{fpath} failed XML parsing: {exc}")
+
+          if errors:
+              for err in errors:
+                  print(f"::error::{err}")
+              sys.exit(1)
+
+          print("All profile architecture checks passed.")
+          EOF
